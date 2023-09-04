@@ -1,0 +1,70 @@
+dependencies:
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+    </dependencies>
+
+
+
+controller - @RestControllerAdvice, @ExceptionHandler - wyłapuje wyjątki
+
+klasa controller - @RestController
+@RequestMapping("/nbp")
+
+
+model - @Entity
+//nazwa tabeli w bazie danych
+@Table(name = "java")
+
+
+repository @Repository
+
+service - @Configuration
+public class NbpConfiguration {
+
+    //Tworzymy bean'a który będzie dostępny w aplikacji. Bean typu RestTemplate
+    @Bean
+
+@Service
+
+@Component
+
+
+
+
+
+
+
+
+
+properties:
+
+spring.datasource.url:jdbc:h2:mem:mydb
+spring.datasource.username:sa
+spring.datasource.password:password
+spring.datasource.driverClassName:org.h2.Driver
+spring.jpa.database-platform:org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled:true
